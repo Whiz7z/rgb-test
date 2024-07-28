@@ -1,0 +1,192 @@
+@import "../../styles/variables.scss";
+
+.infoContainer {
+  .webinarPseudoBtn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    width: 120px;
+    height: 32px;
+    border-radius: 0.5rem;
+    background: $secbtnbg;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    color: $mainAccent;
+    font-size: 7.7rem;
+    font-weight: 800;
+    line-height: 94px;
+  }
+
+  .secondTitle {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    .diagonal {
+      width: 110px;
+      height: 40px;
+      border-radius: 5px;
+      background: $mainAccent;
+      display: grid;
+      place-content: center;
+      rotate: -3.5deg;
+      span {
+        font-size: 23.6px;
+        font-weight: 800;
+        line-height: 29px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        rotate: 3.5deg;
+      }
+    }
+
+    .text {
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-top: 20px;
+    line-height: 26.6px;
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .portalFeatures {
+    display: none;
+  }
+  .features {
+    display: grid;
+    row-gap: 1.6rem;
+    margin-top: 58px;
+    .feature {
+      display: flex;
+      gap: 1.6rem;
+
+      align-items: center;
+      .featureImage {
+        // width: 51px;
+
+        // img{
+        //   width: 100%;
+        // }
+      }
+
+      .featureInfo {
+        p {
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 19.2px;
+        }
+      }
+    }
+
+    .tutorFeature {
+      .featureImage {
+        width: 51px;
+        height: 50px;
+        img {
+          width: 51px;
+          height: 100%;
+        }
+      }
+      .featureInfo {
+        h3 {
+          font-size: 1.3rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          line-height: 15.6px;
+          span {
+            color: #4252d1;
+          }
+        }
+      }
+    }
+
+    .bonusFeature {
+      .featureInfo {
+        h3 {
+          font-size: 1.2rem;
+          line-height: 17.7px;
+        }
+      }
+      .featureImage {
+        width: 51px;
+        height: 40px;
+        img {
+          width: 38px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .infoContainer {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .infoContainer {
+    .portalFeatures {
+      display: block;
+    }
+    .webinarPseudoBtn {
+      gap: 4.5px;
+      width: 90px;
+      height: 24px;
+      border-radius: 0.3rem;
+      font-size: 1.2rem;
+      line-height: 17.95px;
+
+      svg {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    h1 {
+      font-size: 5.3rem;
+      line-height: 64.59px;
+    }
+
+    .secondTitle {
+      .diagonal {
+        width: 77.81px;
+        height: 32.12px;
+        border-radius: 3.57px;
+
+        span {
+          font-size: 16px;
+          line-height: 19.6px;
+        }
+      }
+      .text {
+        font-size: 15px;
+        line-height: 17.89px;
+      }
+    }
+
+    .description {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20.72px;
+      margin-top: 16px;
+      text-align: center;
+    }
+
+    .features {
+      display: none;
+    }
+  }
+}

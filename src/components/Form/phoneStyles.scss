@@ -1,0 +1,16 @@
+.PhoneInput{
+  position: relative;
+  .PhoneInputCountry{
+    position: absolute;
+    height: 100%;
+    padding-left: 15px;
+  }
+
+  .PhoneInputInput{
+    padding-left: 55px;
+  }
+
+  .PhoneInputInternationalIconGlobe{
+    display: none;
+  }
+}

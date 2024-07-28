@@ -1,0 +1,74 @@
+@import "../../styles/variables.scss";
+
+.headerContainer {
+  line-height: normal;
+  margin-top: 34px;
+  display: flex;
+  grid-column: 2/3;
+  height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+  .date {
+    display: flex;
+    gap: 1.8rem;
+    .calendar,
+    .clock {
+      width: 141px;
+      height: 40px;
+      border-radius: 1rem;
+      background: $btnbg;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      justify-content: center;
+    }
+  }
+
+  a {
+    padding: 0;
+  }
+
+  .mobileLogo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headerContainer {
+    margin-top: 28px;
+    height: auto;
+    .mobileLogo {
+      display: block;
+      padding-left: 14px;
+    }
+
+    .desktopLogo {
+      display: none;
+    }
+    .date {
+      gap: 0.6rem;
+      .calendar,
+      .clock {
+        width: 88px;
+        height: 24px;
+        font-size: 1.1rem;
+        border-radius: 6px;
+      }
+
+      .clock {
+        svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
+
+      .calendar {
+        svg {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+}
